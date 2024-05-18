@@ -1,5 +1,11 @@
 // Define array of student objects
 const prompt = require ("prompt-sync")();
+
+
+// Prompt the user to input a student's first name
+const inputFirstName = prompt("Enter the first name of the student:");
+
+
 const students = [
   { firstName: "Kingsley", surname: "Ben", gender: "M", age: 17, favoriteSubject: "Maths" },
   { firstName: "Amara", surname: "Amos", gender: "F", age: 18, favoriteSubject: "Maths" },
@@ -7,6 +13,7 @@ const students = [
   { firstName: "Loveth", surname: "Kings", gender: "F", age: 19, favoriteSubject: "Physics" },
   { firstName: "Caring", surname: "Prince", gender: "F", age: 17, favoriteSubject: "Biology" }
 ];
+
 
 // Function to get student details by first name
 const getStudentDetails = (firstName) => {
@@ -16,6 +23,5 @@ const getStudentDetails = (firstName) => {
     "Student not found!";
 };
 
-// Prompt the user to input a student's first name
-const inputFirstName = prompt("Enter the first name of the student:");
+
 console.log(getStudentDetails(inputFirstName));
